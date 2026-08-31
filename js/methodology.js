@@ -100,5 +100,4 @@ const MethodologyLab = {
     if (btnReset) btnReset.addEventListener("click", () => this.applyPreset('balanced'));
   }
 };
-
 window.MethodologyLab = MethodologyLab;

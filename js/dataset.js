@@ -35,13 +35,10 @@ const DatasetManager = {
     `;
   },
   exportFullJSON() {
-    const data = window.AppState.get();
     const a = document.createElement("a");
-    a.href = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data, null, 2));
+    a.href = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(window.AppState.get(), null, 2));
     a.download = `dataset_eleitoral_${Date.now()}.json`;
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
+    document.body.appendChild(a); a.click(); a.remove();
   },
   exportTimeSeriesCSV() {
     const data = window.AppState.get();
@@ -52,9 +49,7 @@ const DatasetManager = {
     const a = document.createElement("a");
     a.href = URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8;" }));
     a.download = `series_temporais_30d_${Date.now()}.csv`;
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
+    document.body.appendChild(a); a.click(); a.remove();
   },
   exportPollsCSV() {
     const data = window.AppState.get();
@@ -65,9 +60,7 @@ const DatasetManager = {
     const a = document.createElement("a");
     a.href = URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8;" }));
     a.download = `pesquisas_registradas_${Date.now()}.csv`;
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
+    document.body.appendChild(a); a.click(); a.remove();
   },
   handleFileUpload(event) {
     const file = event.target.files[0];
@@ -82,7 +75,7 @@ const DatasetManager = {
           alert("Dataset importado com sucesso!");
           this.renderDatasetHub();
         }
-      } catch (err) { alert("Erro ao importar JSON: " + err.message); }
+      } catch (err) { alert("Erro ao ler arquivo: " + err.message); }
     };
     reader.readAsText(file);
   },
@@ -100,7 +93,7 @@ const DatasetManager = {
     } catch (err) { alert("JSON inválido: " + err.message); }
   },
   resetToFactory() {
-    if (confirm("Restaurar dados originais de fábrica?")) {
+    if (confirm("Restaurar dados de fábrica?")) {
       window.AppState.resetToDefault();
       this.renderDatasetHub();
     }

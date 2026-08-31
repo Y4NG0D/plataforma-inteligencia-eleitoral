@@ -1,7 +1,7 @@
 const ApiSandbox = {
   endpoints: [
     {
-      id: "ep_ide", method: "GET", path: "/api/v1/elections/ide-ranking", title: "Ranking do IDE",
+      id: "ep_ide", method: "GET", path: "/api/v1/elections/ide-ranking", title: "Ranking Geral de Dinâmica (IDE)",
       handler: () => {
         const data = window.AppState.get();
         return { status: "success", timestamp: new Date().toISOString(), ranking: data.candidates.map(c => ({ name: c.name, ide: c.ide, delta_30d: c.ideDelta30d, trend: c.trendLabel })) };
@@ -14,6 +14,10 @@ const ApiSandbox = {
     {
       id: "ep_anomalies", method: "GET", path: "/api/v1/radar/anomalies/active", title: "Radar de Anomalias Ativas",
       handler: () => ({ status: "success", total: window.AppState.get().anomalyRadar.length, anomalies: window.AppState.get().anomalyRadar })
+    },
+    {
+      id: "ep_leadlag", method: "GET", path: "/api/v1/leadlag/correlation-curve", title: "Curva de Validação Empírica (Lead-Lag)",
+      handler: () => ({ status: "success", analysis: LeadLagEngine.analyzeLags() })
     }
   ],
 
@@ -56,8 +60,10 @@ const ApiSandbox = {
   testEndpoint(endpointId) {
     const ep = this.endpoints.find(e => e.id === endpointId);
     if (!ep) return;
-    document.getElementById("apiEndpointTitle").textContent = `${ep.method} ${ep.path}`;
-    document.getElementById("apiResponseOutput").textContent = JSON.stringify(ep.handler(), null, 2);
+    const title = document.getElementById("apiEndpointTitle");
+    const output = document.getElementById("apiResponseOutput");
+    if (title) title.textContent = `${ep.method} ${ep.path}`;
+    if (output) output.textContent = JSON.stringify(ep.handler(), null, 2);
   }
 };
 window.ApiSandbox = ApiSandbox;
