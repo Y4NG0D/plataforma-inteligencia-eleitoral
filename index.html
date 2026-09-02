@@ -3,23 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Plataforma de Inteligência e Dinâmica Eleitoral</title>
-  
-  <!-- Bootstrap 5.3 CSS & Icons -->
+  <title>Plataforma de Inteligência Eleitoral</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  
-  <!-- Tipografia Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Estilos do Projeto -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <!-- Top Header Institucional -->
   <header class="top-header py-3 px-4">
     <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center gap-3">
       <div class="d-flex align-items-center gap-3">
@@ -28,26 +21,22 @@
         </div>
         <div>
           <div class="d-flex align-items-center gap-2">
-            <h1 class="h5 mb-0 fw-bold tracking-tight text-white">POLITICS DATA</h1>
-            <span class="badge brand-badge">Inteligência & Dinâmica Eleitoral</span>
+            <h1 class="h5 mb-0 fw-bold tracking-tight text-white">plataforma-inteligencia-eleitoral</h1>
+            <span class="badge brand-badge">Dinâmica & Antecipação</span>
           </div>
-          <small class="text-light opacity-75">Monitoramento Contínuo, Aceleração Digital & Cruzamento com Pesquisas</small>
+          <small class="text-light opacity-75">Transformando Sinais Digitais em Indicadores Mensuráveis de Opinião Pública</small>
         </div>
       </div>
-
-      <div class="d-flex align-items-center gap-3">
-        <div class="bg-dark bg-opacity-50 p-2 px-3 rounded border border-secondary border-opacity-25 small text-light">
-          <i class="bi bi-geo-alt-fill text-info me-1"></i>
-          <span class="fw-semibold">Eleição Estadual 2026</span>
-          <span class="text-secondary mx-2">|</span>
-          <i class="bi bi-clock-history text-warning me-1"></i>
-          <span class="opacity-75">Atualizado hoje às 08:00</span>
-        </div>
+      <div class="bg-dark bg-opacity-50 p-2 px-3 rounded border border-secondary border-opacity-25 small text-light">
+        <i class="bi bi-geo-alt-fill text-info me-1"></i>
+        <span class="fw-semibold">Eleição Estadual 2026</span>
+        <span class="text-secondary mx-2">|</span>
+        <i class="bi bi-clock-history text-warning me-1"></i>
+        <span class="opacity-75">Atualizado hoje às 08:00</span>
       </div>
     </div>
   </header>
 
-  <!-- Navegação Principal (Abas) -->
   <nav class="main-nav bg-dark bg-opacity-75 sticky-top no-print">
     <div class="container-fluid px-4">
       <ul class="nav">
@@ -80,64 +69,54 @@
     </div>
   </nav>
 
-  <!-- Conteúdo Principal -->
   <main class="container-fluid px-4 py-4">
 
     <!-- 1. DASHBOARD -->
     <section id="view-dashboard" class="view-section">
-      <!-- Linha de KPIs Estratégicos -->
       <div class="row g-3 mb-4">
         <div class="col-12 col-sm-6 col-xl-3">
           <div class="dashboard-card kpi-card p-3">
             <div class="kpi-label">Líder em Volume & Presença</div>
             <div class="kpi-value text-primary">Candidato A</div>
-            <div class="small text-muted mt-1">
-              <span class="text-dark fw-bold">81,4 pts</span> • Crescimento vegetativo (+2% em 30d)
-            </div>
+            <div class="small text-muted mt-1"><span class="text-dark fw-bold">81,4 pts</span> • Crescimento vegetativo (+2% em 30d)</div>
           </div>
         </div>
-
         <div class="col-12 col-sm-6 col-xl-3">
           <div class="dashboard-card kpi-card kpi-orange p-3">
             <div class="kpi-label">Maior Aceleração de Dinâmica</div>
             <div class="kpi-value text-danger">Candidato B</div>
-            <div class="small text-muted mt-1">
-              <span class="text-danger fw-bold">+18% em 30d</span> • Disparo súbito de repercussão
-            </div>
+            <div class="small text-muted mt-1"><span class="text-danger fw-bold">+18% em 30d</span> • Disparo súbito de repercussão</div>
           </div>
         </div>
-
         <div class="col-12 col-sm-6 col-xl-3">
           <div class="dashboard-card kpi-card kpi-green p-3">
             <div class="kpi-label">Volume Total Monitorado (24h)</div>
             <div class="kpi-value">456,2 mil</div>
-            <div class="small text-muted mt-1">
-              <span class="text-success fw-bold">+28%</span> vs média dos últimos 7 dias
-            </div>
+            <div class="small text-muted mt-1"><span class="text-success fw-bold">+28%</span> vs média dos últimos 7 dias</div>
           </div>
         </div>
-
         <div class="col-12 col-sm-6 col-xl-3">
           <div class="dashboard-card kpi-card kpi-red p-3">
             <div class="kpi-label">Alertas de Anomalia Ativos</div>
             <div class="kpi-value text-dark">3 Alertas</div>
-            <div class="small text-danger fw-bold mt-1">
-              <i class="bi bi-exclamation-octagon-fill me-1"></i> 1 Crítico (Pico no Cand. B)
-            </div>
+            <div class="small text-danger fw-bold mt-1"><i class="bi bi-exclamation-octagon-fill me-1"></i> 1 Crítico (Pico no Cand. B)</div>
           </div>
         </div>
       </div>
 
-      <!-- Gráfico de 30 Dias + Ranking IDE -->
       <div class="row g-4 mb-4">
         <div class="col-12 col-lg-8">
           <div class="dashboard-card h-100 p-3">
-            <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex flex-wrap justify-content-between align-items-center mb-3 gap-2">
               <div>
-                <h5 class="card-header-clean p-0 m-0">Dinâmica dos Últimos 30 Dias (Evolução do IDE)</h5>
+                <h5 class="card-header-clean p-0 m-0">Dinâmica dos Candidatos (Evolução do IDE)</h5>
                 <small class="text-muted">Acompanhamento contínuo da velocidade de crescimento</small>
               </div>
-              <span class="badge bg-primary-subtle text-primary border border-primary-subtle">Série Temporal Diária</span>
+              <div class="btn-group btn-group-sm" role="group">
+                <button type="button" class="btn btn-outline-primary btn-period" data-days="7">7 dias</button>
+                <button type="button" class="btn btn-outline-primary btn-period" data-days="15">15 dias</button>
+                <button type="button" class="btn btn-primary active btn-period" data-days="30">30 dias</button>
+              </div>
             </div>
             <div style="height: 340px; position: relative;">
               <canvas id="chartDynamicsTrend"></canvas>
@@ -149,7 +128,7 @@
           <div class="dashboard-card h-100 p-3">
             <div class="card-header-clean p-0 mb-3">
               <h5 class="m-0">Ranking de Dinâmica Eleitoral</h5>
-              <small class="text-muted">Índice combinado (0 a 100) e taxa de variação</small>
+              <small class="text-muted">Clique em um candidato para ver os 6 sub-índices</small>
             </div>
             <div class="table-responsive">
               <table class="table table-custom table-hover align-middle mb-0">
@@ -160,27 +139,23 @@
                     <th>Índice</th>
                     <th>Tendência</th>
                     <th>Diagnóstico</th>
+                    <th></th>
                   </tr>
                 </thead>
                 <tbody id="rankingTableBody"></tbody>
               </table>
             </div>
-            <div class="mt-3 p-2 bg-light rounded small text-secondary border">
-              <i class="bi bi-info-circle text-primary me-1"></i>
-              <strong>Diferencial:</strong> O Candidato A lidera em pontuação absoluta, mas o Candidato B apresenta aceleração atípica (+18%), indicando alteração na dinâmica.
-            </div>
           </div>
         </div>
       </div>
 
-      <!-- Radar de Mudanças (Detecção Automática de Anomalias) -->
       <div class="row g-4">
         <div class="col-12">
           <div class="dashboard-card p-4">
             <div class="d-flex justify-content-between align-items-center mb-3 border-bottom pb-2">
               <div>
                 <h5 class="fw-bold mb-0 text-dark"><i class="bi bi-radar text-danger me-2"></i>Radar de Mudanças & Anomalias Digitais</h5>
-                <small class="text-muted">Alterações fora do padrão nas últimas 24 a 48 horas</small>
+                <small class="text-muted">Clique em qualquer alerta para abrir o relatório forense da anomalia</small>
               </div>
               <span class="badge bg-danger">Detecção Algorítmica</span>
             </div>
@@ -193,19 +168,43 @@
     <!-- 2. DIGITAL VS PESQUISAS -->
     <section id="view-polls" class="view-section d-none">
       <div class="dashboard-card p-4 mb-4">
-        <div class="d-flex flex-wrap justify-content-between align-items-center border-bottom pb-3 mb-3">
+        <div class="d-flex flex-wrap justify-content-between align-items-center border-bottom pb-3 mb-3 gap-3">
           <div>
             <h4 class="fw-bold text-dark mb-1">Comparação: Dinâmica Digital vs Pesquisas de Opinião</h4>
-            <p class="text-muted small mb-0">
-              Validação empírica (Lead-Lag): as alterações no ambiente digital antecedem a movimentação das pesquisas amostrais?
-            </p>
+            <p class="text-muted small mb-0">Validação empírica (Lead-Lag): as alterações no ambiente digital antecedem as pesquisas?</p>
           </div>
-          <span class="badge bg-success fs-6 p-2">
-            <i class="bi bi-check-circle-fill me-1"></i> Hipótese Empiricamente Testada
-          </span>
+          <div class="d-flex align-items-center gap-2">
+            <select id="selectPollCandidate" class="form-select form-select-sm" style="width: auto;">
+              <option value="cand_b" selected>Foco: Candidato B (Aceleração)</option>
+              <option value="cand_a">Foco: Candidato A (Líder Nominal)</option>
+              <option value="cand_c">Foco: Candidato C (Terceira Força)</option>
+              <option value="all">Comparar Candidatos A e B</option>
+            </select>
+            <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modalAddSurvey">
+              <i class="bi bi-plus-circle me-1"></i>Cadastrar Pesquisa
+            </button>
+          </div>
         </div>
 
-        <div id="leadLagInsightText" class="p-3 bg-light rounded border mb-4"></div>
+        <div class="lead-lag-box mb-4">
+          <div class="row align-items-center g-3">
+            <div class="col-12 col-md-7">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="small text-light fw-bold"><i class="bi bi-sliders me-1"></i>SIMULADOR DE ANTECIPAÇÃO TEMPORAL (LEAD-LAG)</span>
+                <span id="labelLagDays" class="badge bg-primary fs-6">9 dias</span>
+              </div>
+              <input type="range" class="form-range" id="sliderLeadLag" min="0" max="14" value="9" step="1">
+              <div class="d-flex justify-content-between small text-secondary">
+                <span>0 dias (Sincronizado)</span>
+                <span>7 dias (1 semana)</span>
+                <span>14 dias (2 semanas)</span>
+              </div>
+            </div>
+            <div class="col-12 col-md-5">
+              <div id="leadLagInsightText"></div>
+            </div>
+          </div>
+        </div>
 
         <div class="mb-4" style="height: 380px; position: relative;">
           <canvas id="chartDigitalVsPolls"></canvas>
@@ -217,11 +216,12 @@
             <thead>
               <tr>
                 <th>Data</th>
+                <th>Instituto</th>
                 <th>Cand. A (Digital)</th>
                 <th>Cand. A (Pesquisa %)</th>
                 <th>Cand. B (Digital)</th>
                 <th>Cand. B (Pesquisa %)</th>
-                <th>Fato / Evento Notável</th>
+                <th>Fato Político</th>
               </tr>
             </thead>
             <tbody id="pollsTableBody"></tbody>
@@ -234,14 +234,14 @@
     <section id="view-duel" class="view-section d-none">
       <div class="dashboard-card p-4 mb-4">
         <div class="row align-items-center g-3 mb-4 pb-3 border-bottom">
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-5">
             <label class="form-label small fw-bold text-muted">PRIMEIRO CANDIDATO</label>
             <select id="selectDuelCandidate1" class="form-select"></select>
           </div>
-          <div class="col-12 col-md-4 text-center">
+          <div class="col-12 col-md-2 text-center">
             <span class="badge bg-dark px-3 py-2 fs-6">VS</span>
           </div>
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-5">
             <label class="form-label small fw-bold text-muted">SEGUNDO CANDIDATO</label>
             <select id="selectDuelCandidate2" class="form-select"></select>
           </div>
@@ -252,9 +252,11 @@
           <div class="col-12 col-md-6" id="duelCardCandidate2"></div>
         </div>
 
+        <div class="mb-4" id="duelVerdictContainer"></div>
+
         <div class="row g-4">
           <div class="col-12 col-lg-6">
-            <div class="border rounded p-3 h-100">
+            <div class="border rounded p-3 h-100 bg-white">
               <h6 class="fw-bold text-dark mb-2 text-center">Comparativo dos 6 Sub-Índices (Radar)</h6>
               <div style="height: 350px; position: relative;">
                 <canvas id="chartDuelRadar"></canvas>
@@ -262,7 +264,7 @@
             </div>
           </div>
           <div class="col-12 col-lg-6">
-            <div class="border rounded p-3 h-100">
+            <div class="border rounded p-3 h-100 bg-white">
               <h6 class="fw-bold text-dark mb-3">Detalhamento dos 6 Pilares Metodológicos</h6>
               <div class="table-responsive">
                 <table class="table table-custom table-bordered align-middle">
@@ -285,22 +287,59 @@
 
     <!-- 4. TEMAS E PAUTAS -->
     <section id="view-themes" class="view-section d-none">
+      <div class="dashboard-card p-3 mb-4">
+        <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+          <div>
+            <span class="small fw-bold text-muted text-uppercase d-block mb-1">Selecione uma Pauta para Investigar Domínio:</span>
+            <div class="d-flex flex-wrap gap-2" id="themePillButtons"></div>
+          </div>
+          <span class="badge bg-primary">Análise Temática NLP</span>
+        </div>
+      </div>
+
       <div class="row g-4 mb-4">
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-5">
           <div class="dashboard-card p-4 h-100">
-            <h5 class="fw-bold text-dark mb-1">Distribuição de Volume por Pauta</h5>
-            <small class="text-muted d-block mb-3">Participação percentual no debate espontâneo</small>
-            <div style="height: 280px; position: relative;">
-              <canvas id="chartThemesVolume"></canvas>
+            <h5 class="fw-bold text-dark mb-1" id="selectedThemeName">Segurança Pública</h5>
+            <div class="text-muted small mb-3" id="selectedThemeTone">Crítico / Cobrança</div>
+            
+            <div class="mb-3">
+              <small class="text-muted d-block">Candidato Dominante na Pauta:</small>
+              <div class="h5 fw-bold text-primary mb-1" id="selectedThemeDominant">Candidato B (49% de voz)</div>
+              <span class="badge bg-success-subtle text-success border border-success" id="selectedThemeGrowth">+34% semana</span>
+            </div>
+
+            <div class="mb-3">
+              <small class="text-muted d-block mb-1">Termos e Expressões Chave:</small>
+              <div id="selectedThemeKeywords"></div>
             </div>
           </div>
         </div>
 
+        <div class="col-12 col-lg-7">
+          <div class="dashboard-card p-4 h-100">
+            <h6 class="fw-bold text-dark mb-1">Distribuição do Domínio da Pauta (% Share de Voz)</h6>
+            <small class="text-muted d-block mb-3">Participação de cada candidato neste assunto</small>
+            <div style="height: 240px; position: relative;">
+              <canvas id="chartThemeCandidateShare"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mb-4">
         <div class="col-12 col-lg-6">
           <div class="dashboard-card p-4 h-100">
-            <h5 class="fw-bold text-dark mb-1">Sentimento por Tema</h5>
-            <small class="text-muted d-block mb-3">Positivo, Neutro ou Crítico</small>
-            <div style="height: 280px; position: relative;">
+            <h5 class="fw-bold text-dark mb-1">Volume Geral por Pauta</h5>
+            <div style="height: 260px; position: relative;">
+              <canvas id="chartThemesVolume"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="dashboard-card p-4 h-100">
+            <h5 class="fw-bold text-dark mb-1">Sentimento Consolidado por Pauta</h5>
+            <div style="height: 260px; position: relative;">
               <canvas id="chartThemesSentiment"></canvas>
             </div>
           </div>
@@ -310,15 +349,15 @@
       <div class="row g-4">
         <div class="col-12">
           <div class="dashboard-card p-4">
-            <h5 class="fw-bold text-dark mb-3">Matriz de Pautas e Domínio por Candidato</h5>
+            <h5 class="fw-bold text-dark mb-3">Matriz Geral de Pautas</h5>
             <div class="table-responsive">
               <table class="table table-custom table-hover table-bordered align-middle mb-0">
                 <thead>
                   <tr>
-                    <th>Tema / Pauta</th>
-                    <th>Share & Dinâmica Semanal</th>
-                    <th>Candidato Dominante (Voz)</th>
-                    <th>Distribuição de Sentimento</th>
+                    <th>Tema</th>
+                    <th>Share & Crescimento</th>
+                    <th>Dominante</th>
+                    <th>Sentimento</th>
                   </tr>
                 </thead>
                 <tbody id="themesTableBody"></tbody>
@@ -333,40 +372,157 @@
     <section id="view-relatorio" class="view-section d-none">
       <div class="dashboard-card p-4 mb-4 no-print">
         <div class="row align-items-center g-3">
-          <div class="col-12 col-md-6">
-            <label class="form-label small fw-bold text-muted">NOME DO INSTITUTO / CLIENTE (WHITE-LABEL)</label>
-            <input type="text" id="inputInstituteName" class="form-control" placeholder="Ex: Instituto Nexus de Opinião Pública">
+          <div class="col-12 col-md-4">
+            <label class="form-label small fw-bold text-muted">INSTITUTO / MARCA (WHITE-LABEL)</label>
+            <input type="text" id="inputInstituteName" class="form-control" placeholder="Nome do seu Instituto">
           </div>
-          <div class="col-12 col-md-6 text-md-end">
-            <button id="btnPrintReport" class="btn btn-primary px-4 py-2 fw-semibold">
-              <i class="bi bi-printer-fill me-2"></i>Imprimir / Salvar em PDF
-            </button>
+          <div class="col-12 col-md-4">
+            <label class="form-label small fw-bold text-muted">CLIENTE / COMITÊ</label>
+            <input type="text" id="inputClientName" class="form-control" placeholder="Nome do Cliente">
+          </div>
+          <div class="col-12 col-md-4 text-md-end d-flex gap-2 justify-content-md-end">
+            <button id="btnRefreshReport" class="btn btn-outline-primary"><i class="bi bi-arrow-clockwise me-1"></i>Atualizar</button>
+            <button id="btnExportJson" class="btn btn-outline-secondary"><i class="bi bi-download me-1"></i>JSON</button>
+            <button id="btnPrintReport" class="btn btn-primary fw-semibold"><i class="bi bi-printer-fill me-1"></i>Imprimir / PDF</button>
           </div>
         </div>
       </div>
-
       <div id="reportDynamicContent"></div>
     </section>
 
   </main>
 
-  <!-- Rodapé Institucional -->
+  <!-- Modais -->
+  <div class="modal fade" id="modalAlertDetail" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title fw-bold" id="modalAlertTitle">Relatório Forense de Anomalia</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4">
+          <p class="text-secondary" id="modalAlertSummary"></p>
+          <div class="row g-3 mb-3">
+            <div class="col-6 col-md-3">
+              <div class="p-2 border rounded bg-light">
+                <small class="text-muted d-block">Pico Súbito:</small>
+                <strong class="text-danger fs-5" id="modalAlertSpike">+187%</strong>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="p-2 border rounded bg-light">
+                <small class="text-muted d-block">Pauta:</small>
+                <strong class="text-dark" id="modalAlertTopic">Segurança</strong>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="p-2 border rounded bg-light">
+                <small class="text-muted d-block">Tom:</small>
+                <strong class="text-danger" id="modalAlertEmotion">Crítico</strong>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="p-2 border rounded bg-light">
+                <small class="text-muted d-block">Plataformas:</small>
+                <strong class="text-dark small" id="modalAlertPlatforms">TikTok, IG</strong>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <h6 class="fw-bold text-dark">Gatilho de Repercussão:</h6>
+            <div class="p-2 bg-light border rounded small" id="modalAlertDriver"></div>
+          </div>
+          <div>
+            <h6 class="fw-bold text-dark">Diagnóstico Algorítmico:</h6>
+            <p class="small text-secondary" id="modalAlertInvestigation"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalCandidateDetail" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title fw-bold" id="modalCandName">Ficha do Candidato</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="badge bg-secondary" id="modalCandNumber">Número 00</span>
+            <div class="text-end">
+              <div class="display-6 fw-bold text-dark" id="modalCandScore">00.0</div>
+              <small class="text-muted">Índice IDE</small>
+            </div>
+          </div>
+          <div class="mb-3">
+            <small class="text-muted d-block">Diagnóstico:</small>
+            <strong class="text-dark" id="modalCandAcceleration"></strong>
+          </div>
+          <div class="mb-3">
+            <small class="text-muted d-block">Perfil Estratégico:</small>
+            <p class="small text-secondary mb-0" id="modalCandProfile"></p>
+          </div>
+          <div class="mb-3">
+            <h6 class="fw-bold text-dark border-bottom pb-1">Decomposição dos 6 Sub-Índices (0 a 100):</h6>
+            <div id="modalCandSubindices"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalAddSurvey" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title fw-bold">Cadastrar Nova Pesquisa Registrada</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <form id="formAddSurvey">
+          <div class="modal-body p-4">
+            <div class="mb-3">
+              <label class="form-label small fw-bold">Data (DD/MM)</label>
+              <input type="text" id="inputSurveyDate" class="form-control" placeholder="Ex: 05/09" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label small fw-bold">Instituto</label>
+              <input type="text" id="inputSurveyInstitute" class="form-control" placeholder="Ex: Quaest, Datafolha, IPEC" required>
+            </div>
+            <div class="row g-2 mb-3">
+              <div class="col-6">
+                <label class="form-label small fw-bold">Cand. A (% Votos)</label>
+                <input type="number" step="0.1" id="inputSurveyScoreA" class="form-control" placeholder="38.5" required>
+              </div>
+              <div class="col-6">
+                <label class="form-label small fw-bold">Cand. B (% Votos)</label>
+                <input type="number" step="0.1" id="inputSurveyScoreB" class="form-control" placeholder="38.0" required>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label small fw-bold">Fato / Evento Político Notável</label>
+              <input type="text" id="inputSurveyEvent" class="form-control" placeholder="Ex: Sabatina na TV ou debate">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-primary">Adicionar ao Histórico</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
   <footer class="py-4 bg-white border-top mt-5 no-print">
     <div class="container-fluid px-4 d-flex flex-wrap justify-content-between align-items-center small text-muted">
-      <div>
-        <strong>Plataforma de Inteligência e Dinâmica Eleitoral</strong> — Protótipo Funcional v1.0
-      </div>
-      <div>
-        Compatível com <strong>GitHub Pages</strong> e <strong>Vercel</strong>
-      </div>
+      <div><strong>plataforma-inteligencia-eleitoral</strong> — Protótipo Funcional v1.0</div>
+      <div>GitHub Pages & Vercel Ready</div>
     </div>
   </footer>
 
-  <!-- Scripts: Chart.js e Bootstrap Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
-
-  <!-- Módulos JavaScript -->
   <script src="js/data.js"></script>
   <script src="js/charts.js"></script>
   <script src="js/app.js"></script>
